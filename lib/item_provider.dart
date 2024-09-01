@@ -14,6 +14,18 @@ class ItemProvider with ChangeNotifier {
         title: "Rainforest Ecosystems",
         description:
             "Discover the rich biodiversity found in rainforests, from towering trees to unique wildlife species"),
+    Item(
+        title: "Space Exploration",
+        description:
+            "Learn about humanity's journey to explore the cosmos, from the first moon landing to Mars missions"),
+    Item(
+        title: "Ancient Civilisations",
+        description:
+            "Explore the mysteries and achievements of ancient civilizations like the Egyptians, Greeks, and Mayans."),
+    Item(
+        title: "Renewable Energy",
+        description:
+            "Understand the importane of renewable energy sources like solar,wind and hydro power in combating climate change."),
   ];
 
   List<Item> get items => _items;
@@ -28,4 +40,3 @@ class ItemProvider with ChangeNotifier {
     notifyListeners();
   }
 }
-

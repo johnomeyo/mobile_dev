@@ -135,7 +135,7 @@ class AddItemPageState extends State<AddItemPage> {
             hintText: 'Add description',
             border: OutlineInputBorder(),
           ),
-          maxLines: 4,
+          maxLines: 6,
           onSaved: (value) {
             _description = value!;
           },

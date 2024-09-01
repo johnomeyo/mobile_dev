@@ -44,18 +44,22 @@ class ItemListPage extends StatelessWidget {
       ),
       body: Consumer<ItemProvider>(
         builder: (context, itemProvider, child) {
-          return ListView.builder(
-            itemCount: itemProvider.items.length,
-            itemBuilder: (context, index) {
-              final item = itemProvider.items[index];
-              return Padding(
-                padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
-                child: ItemCard(
-                  item: item,
-                  onDelete: () => itemProvider.removeItem(index),
-                ),
-              );
-            },
+          return Padding(
+            padding: const EdgeInsets.symmetric(vertical: 12),
+            child: ListView.builder(
+              itemCount: itemProvider.items.length,
+              itemBuilder: (context, index) {
+                final item = itemProvider.items[index];
+                return Padding(
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                  child: ItemCard(
+                    item: item,
+                    onDelete: () => itemProvider.removeItem(index),
+                  ),
+                );
+              },
+            ),
           );
         },
       ),
