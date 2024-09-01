@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:test_app/add_items_pgae.dart';
+import 'package:test_app/add_items_page.dart';
 import 'package:test_app/item_card.dart';
 import 'package:test_app/item_provider.dart';
 
